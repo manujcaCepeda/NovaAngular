@@ -1,0 +1,196 @@
+{
+	"id": "2f27d2b6-1c95-4061-8fd6-fda3da38c9e7",
+	"name": "NOVA",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"a717a451-cad7-4420-af58-bd1ceb496510",
+		"54587954-f2eb-40cf-a850-7bb00c0b3745",
+		"780a1d87-e6ba-47f5-a975-a4c63a86deeb",
+		"67c8ae6b-cca6-4782-b2de-30b7c5cd279c",
+		"3de9c772-5626-47f4-9d20-c8f391bb5ab6",
+		"3acb36e9-4ce4-4e4e-a79a-e58eedc31598"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "3acb36e9-4ce4-4e4e-a79a-e58eedc31598",
+			"name": "http://localhost:8081/api/usuario",
+			"url": "http://localhost:8081/api/usuario",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYW51amNhQGdtYWlsLmNvbSIsImV4cCI6MTU3NjI2NjUwNH0.6sCUJe4vi7U2LONmy1OhBR-GxaP-eclvV4OERK98P4iybSc2zNXgb3YvF1u-CJkcqlw2Gr90ihxjJ26fJEK14g",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\r\n   \"email\" : \"manujca@gmail.com\",\r\n   \"password\" : \"manuel\"\r\n}   ",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYW51amNhQGdtYWlsLmNvbSIsImV4cCI6MTU3NjI2NjUwNH0.6sCUJe4vi7U2LONmy1OhBR-GxaP-eclvV4OERK98P4iybSc2zNXgb3YvF1u-CJkcqlw2Gr90ihxjJ26fJEK14g\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3de9c772-5626-47f4-9d20-c8f391bb5ab6",
+			"name": "http://localhost:8081/api/login",
+			"url": "http://localhost:8081/api/login",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\r\n   \"email\" : \"manujca@gmail.com\",\r\n   \"password\" : \"manuel\"\r\n}   ",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "54587954-f2eb-40cf-a850-7bb00c0b3745",
+			"name": "http://localhost:8081/api/categoria",
+			"url": "http://localhost:8081/api/categoria",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"codigo\": 3,\n\t\"nombre\": \"ZAPATOS\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "67c8ae6b-cca6-4782-b2de-30b7c5cd279c",
+			"name": "http://localhost:8081/api/usuario",
+			"url": "http://localhost:8081/api/usuario",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"email\": \"manujca@gmail.com\",\n    \"nombres\": \"Manuel\",\n    \"apellidos\": \"Cepeda\",\n    \"password\": \"manuel\",\n    \"telefono\": \"0989345370\",\n    \"direccion\": \"Av. Granados y COlimes\",\n    \"rol\": {\n    \t\"id\": 1\n    }\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "780a1d87-e6ba-47f5-a975-a4c63a86deeb",
+			"name": "http://localhost:8081/api/producto",
+			"url": "http://localhost:8081/api/producto",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"nombre\": \"Camiseta Polo ref4251\",\n\t\"descripcion\": \"Camiseta Polo Tommy Hilfiger Amarilla 100% de Algodon ref4251\",\n\t\"precio\": \"55\",\n\t\"cantidad\": \"50\",\n\t\"descuento\": \"20\",\n\t\"url\": \"https://www.vipstoreshop.com/8708-thickbox_default/polo-tommy-hilfiger-hombre-amarillo-ref4251.jpg\",\n\t\"categoria\": {\n\t\t\"codigo\": 1\n\t}\n}\n",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a717a451-cad7-4420-af58-bd1ceb496510",
+			"name": "http://localhost:8081/api/rol",
+			"url": "http://localhost:8081/api/rol",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"rol\": \"ROL_USER\",\n\t\"descripcon\": \"Rol Usuario\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

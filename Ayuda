@@ -1,0 +1,5 @@
+jdk 1.8
+BDD Postgres version 9
+ crean una base con nombre TiendaOnline
+ 
+ java -jar TiendaOnline-0.0.1-SNAPSHOT.jar
